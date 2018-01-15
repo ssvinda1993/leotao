@@ -11,6 +11,7 @@ $(function(){
       renderSecond(info.rows[0].id);
     }
   });
+
   function renderSecond(id){
     $.ajax({
       type:'get',
@@ -29,6 +30,7 @@ $(function(){
     $(this).addClass("now").siblings().removeClass("now");
      var id=$(this).data("id");
      renderSecond(id);
+
     mui(".mui-scroll-wrapper").scroll()[1].scrollTo(0,0,500);
   })
 })
